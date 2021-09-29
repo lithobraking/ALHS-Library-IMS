@@ -17,22 +17,27 @@ public class Student {
     private Long id;
     private String firstName;
     private String lastName;
+    private String email;
     private Integer itemsReserved;
 
 
     public Student() {
     }
 
-    public Student(Long id, String firstName, String lastName, Integer itemsReserved) {
+    public Student(Long id, String firstName, String lastName, String email, Integer itemsReserved) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
         this.itemsReserved = itemsReserved;
     }
 
-    public Student(String firstName, String lastName, Integer itemsReserved) {
+
+
+    public Student(String firstName, String lastName, String email, Integer itemsReserved) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
         this.itemsReserved = itemsReserved;
     }
 
@@ -60,6 +65,14 @@ public class Student {
         this.lastName = lastName;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public Integer getItemsReserved() {
         return itemsReserved;
     }
@@ -74,6 +87,7 @@ public class Student {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
                 ", itemsReserved=" + itemsReserved +
                 '}';
     }

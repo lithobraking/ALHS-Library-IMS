@@ -15,12 +15,14 @@ public class StudentConfig {
             Student ex1 = new Student(
                     "Alana",
                     "Wexler",
+                    "wexbaby@example.com",
                     0
             );
 
             Student ex2 = new Student(
                     "Denny",
                     "Lee",
+                    "dlee@example.com",
                     0
             );
 
