@@ -28,4 +28,13 @@ public class StudentController {
     public void deleteStudent(@PathVariable("studentId") Long studentId) {
         studentService.deleteStudent(studentId);
     }
+
+    @PutMapping(path = "{studentId}")
+    public void editStudent(@PathVariable("studentId") Long studentId,
+                            @RequestParam(required = false) String firstName,
+                            @RequestParam(required = false) String lastName,
+                            @RequestParam(required = false) String email,
+                            @RequestParam(required = false) Integer reservedItems) {
+        studentService.editStudent(studentId, firstName, lastName, email, reservedItems);
+    }
 }
