@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>proj.alhs</groupId>
-	<artifactId>IMS</artifactId>
+	<artifactId>StudentService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ALHS Library IMS</name>
-	<description>Inventory Management System for a high school I made up</description>
+	<name>ALHS Library Student Service</name>
+	<description>Student Service API for ALHS Library</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
